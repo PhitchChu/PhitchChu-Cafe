@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after { /* รูปภาพพื้นหลัง */
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://static.thairath.co.th/media/dFQROr7oWzulq5Fa4VdjQJGZBKH4VyTdrBYchd3N47eZeQvcBTjUxJNh0K2FyEsUH5l.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg1::after { /* รูปภาพพื้นหลัง About ME */
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("BG\ Sky.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg2::after { /* รูปภาพพื้นหลัง MenuSweet */
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("BG\ Bakery.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg3::after { /* รูปภาพพื้นหลัง MenuWater */
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("BG\ Bakery.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg4::after { /* รูปภาพพื้นหลัง เมนูแนะนำ */
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("Menu\ BG.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg5::after { /* รูปภาพพื้นหลัง Menu */
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("Menu\ BG.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  .contentMyprofile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .phuket {
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url(Bgaboutme/petesmo.jpg); /* About me */
+  }
+  .box2 {
+    background-image: url(เมนูขนม/ทาร์ดไข่ออริจินอล.jpg); /* ทาร์ตไข่ */
+  }
+  .box3 {
+    background-image: url(ภาพเมนูน้ำ/แบบตกแต่ง/Lemon\ Tea\ ชามะนาวใหญ่.png); /* เมนูเครื่องดื่ม */
+  }
+  .box4 {
+    background-image: url(เมนูขนม/ภาพเมนูครัวซอง.jpg);
+  }
+  .phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .phuket p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  /* ------------------------------------------------- My Profile ------------------------------------------------ */
+  
+  /* About Me */
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  } */
+
+  .containerAboutMe{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .cardAboutme{
+    width: 450px;
+    height: 500px;
+    position: relative;
+    border-radius: 25px;
+    background:#ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* เพิ่มความเงาให้กรอบการ์ด */
+    overflow: hidden; 
+
+  }
+  .coverAboutme{ /* ขนาดรูปครุ่งบน  */
+    width: 100%;
+  }
+
+  .contentAboutme{ /*กรอบสีตรงวงกลมรูปโปรไฟล์ */
+    position: absolute;
+    bottom: 0;
+    background:#ffffff;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .avatarAboutme{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    transform: translateY(-30%);
+    
+  }
+
+  .avatarAboutme img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+
+  }
+  .profileAboutme{
+    transform: translateY(-30%)
+  }
+  .profileAboutme p{
+    color: #ffffff;
+  }
+  .social{
+    color: #ffffff;
+  }
+
+  @keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
+

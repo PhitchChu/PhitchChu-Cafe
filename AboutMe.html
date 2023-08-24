@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="testFade.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- frontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slickjs -->
+    <link rel="stylesheet" href="Slick.css">
+    <script src="Slick.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .navBar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navBar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navBar a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        h1 {
+            color: rgb(255, 252, 252);
+        }
+
+        .items img {
+            width: 100%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container bg1">
+        <div class="navBar">
+            <div class="logo">
+                <a href="Index.HTML">
+                    <i class="fas fa-suitcase-rolling"></i>
+                </a>
+            </div>
+            <ul>
+                <li><a href="Index.HTML">Home</a></li>
+                <li><a href="AboutMe.html"> About me </a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul>
+        </div>
+        <center>
+            <h1 style="color:rgb(255, 255, 255)"> About Me </h1>
+        </center>
+        <div class="multiple-items">
+            <div class="items1">
+                <img src="Bgaboutme/About Me canva.png" alt="">
+
+            </div>
+
+            <div class="items1">
+                <img src="Bgaboutme/ภาพงานวิ่ง1.jpg" alt="">
+
+            </div>
+
+            <div class="items1">
+                <img src="Bgaboutme/ภาพงานวิ่ง2.jpg" alt="">
+
+            </div>
+
+            <div class="items1">
+                <img src="Bgaboutme/สัมนามอพะเยา.jpg" alt="">
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(() => {
+                $('.multiple-items').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+                $(".multiple-items .slick-prev").html('<i class="fa-solid fa-circle-arrow-left"></i>')
+                $(".multiple-items .slick-next").html('<i class="fa-solid fa-circle-arrow-right"></i>')
+                $(".multiple-items .slick-dots li").html('')
+            });
+        </script>
+    </div>
+</body>
+
+</html>

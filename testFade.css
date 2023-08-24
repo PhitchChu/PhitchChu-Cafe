@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.multiple-items{
+  background-color: aliceblue;
+  position: relative;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  margin-top: 15px;  /* ขยับระยะห่างรูปบนล่าง */
+  border-radius: 30px;
+}
+
+.items {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.items img{
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.items1 {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 30px;
+
+  overflow: hidden;
+}
+
+.items1 img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.multiple-items .slick-prev {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  z-index: 10;
+}
+.multiple-items .slick-next {
+  position: absolute;
+  top: 220px;
+  right: 20px;
+  z-index: 10;
+}
+.multiple-items .slick-arrow {
+  z-index: 10px;
+  width:30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius:50%;
+  border: none;
+  outline: none;
+}
+
+.multiple-items .slick-dots{
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
+}
+
+.multiple-items .slick-dots li{
+  list-style: none;
+  margin: 0 2px;
+  height: 10px;
+  width: 10px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.multiple-items .slick-active{
+  background-color:rgb(255, 0, 0) !important;
+}
+body {
+
+  background-color:rgb(255, 246, 230) ;
+
+}
+
+/* -----------------------------------------------------------------------------------*/
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+.container {
+  min-height: 120vh;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.navBar {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  height: 15vh;
+}
+.navBar ul {
+  display: flex;
+  align-items: center;
+  
+}
+.navBar ul li {
+  padding: 0 25px;
+  text-shadow:50px 50px 50px #ffa600;
+}
+.navBar ul li a {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-shadow:5px 5px 5px #000000;
+}
+.navBar .logo a {
+  font-size: 2.3rem;
+  color: #ffffff;
+}
+.contentMyprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+}
+.bg::after { /* รูปภาพพื้นหลัง */
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(50%);
+  background-image: url("../TestHTML/ภาพ/Menu\ BG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  text-shadow:5px 5px 5px #000000;
+}
